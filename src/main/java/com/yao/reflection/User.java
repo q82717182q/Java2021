@@ -7,13 +7,22 @@ public class User {
     private String id;
     private String name;
     private int age;
+    private Double score;
 
     public User() {
     }
 
-    public User(String id, String name, int age) {
+    public User(String id) {
         this.id = id;
+    }
+
+    public User(String id, String name) {
+        this(id);
         this.name = name;
+    }
+
+    public User(String id, String name, int age) {
+        this(id, name);
         this.age = age;
     }
 
@@ -41,12 +50,21 @@ public class User {
         this.age = age;
     }
 
+    public Double getScore() {
+        return score;
+    }
+
+    public void setScore(Double score) {
+        this.score = score;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
+                ", score=" + score +
                 '}';
     }
 }
