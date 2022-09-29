@@ -1,7 +1,7 @@
 package com.yao.java2021.s28junittest;
 
+import com.yao.demo.java2021.s28junittest.UnitTestDemo1;
 import org.junit.*;
-import org.springframework.context.annotation.Bean;
 
 import static org.junit.Assert.*;
 

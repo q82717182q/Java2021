@@ -4,3 +4,8 @@ com:
       id: 123
       name: "jack"
 
+spring:
+  profiles:
+    active: dev
+
+
